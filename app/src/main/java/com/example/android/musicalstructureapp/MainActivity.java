@@ -13,5 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<Audio> audioArrayList = new ArrayList<Audio>();
+
+        audioArrayList.add(new Audio("Stairway to Heaven", "Led Zeppelin"));
     }
 }
