@@ -7,11 +7,12 @@
     tools:context=".DetailActivity">
 
     <ImageView
-        android:layout_centerInParent="true"
         tools:src="@drawable/ic_launcher_background"
         android:id="@+id/detail_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="360dp"
+        android:layout_height="360dp" />
 
     <TextView
         android:id="@+id/detail_title"
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/detail_image"
         android:layout_centerHorizontal="true"
-        tools:text="AUDIO TITLE"/>
+        tools:text="AUDIO TITLE" />
 
     <TextView
         android:id="@+id/detail_artist"
@@ -29,4 +30,45 @@
         android:layout_centerHorizontal="true"
         tools:text="ARTIST NAME" />
 
+    <ImageButton
+        android:id="@+id/skip_previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        tools:src="@drawable/ic_skip_previous_button" />
+
+    <ImageButton
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/skip_previous_button"
+        tools:src="@drawable/ic_pause_button" />
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:src="@drawable/ic_stop_button" />
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/skip_next_button"
+        tools:src="@drawable/ic_play_button" />
+
+    <ImageButton
+        android:id="@+id/skip_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"
+        tools:src="@drawable/ic_skip_next_button" />
 </RelativeLayout>

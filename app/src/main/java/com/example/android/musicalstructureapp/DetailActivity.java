@@ -3,6 +3,7 @@ package com.example.android.musicalstructureapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +21,18 @@ public class DetailActivity extends AppCompatActivity {
         ImageView audioImageView = (ImageView)findViewById(R.id.detail_image);
         TextView titleTextView = (TextView)findViewById(R.id.detail_title);
         TextView artistTextView = (TextView)findViewById(R.id.detail_artist);
+
+        ImageButton skipPreviousButton = (ImageButton)findViewById(R.id.skip_previous_button);
+        ImageButton stopButton = (ImageButton)findViewById(R.id.stop_button);
+        ImageButton pauseButton = (ImageButton)findViewById(R.id.pause_button);
+        ImageButton playButton = (ImageButton)findViewById(R.id.play_button);
+        ImageButton skipNextButton = (ImageButton)findViewById(R.id.skip_next_button);
+
+        skipPreviousButton.setImageResource(R.drawable.ic_skip_previous_button);
+        stopButton.setImageResource(R.drawable.ic_stop_button);
+        pauseButton.setImageResource(R.drawable.ic_pause_button);
+        playButton.setImageResource(R.drawable.ic_play_button);
+        skipNextButton.setImageResource(R.drawable.ic_skip_next_button);
 
         titleTextView.setText(audioTitle);
         artistTextView.setText(artistName);
