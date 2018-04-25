@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         audioArrayList.add(new Audio("Hey Jude", "The Beatles"));
         audioArrayList.add(new Audio("Blackbird", "The Beatles"));
         audioArrayList.add(new Audio("(Don't Fear) The Reaper", "Blue Oyster Cult"));
-        audioArrayList.add(new Audio("Break On Through (to the Other Side", "The Doors"));
+        audioArrayList.add(new Audio("Break On Through (to the Other Side)", "The Doors"));
         audioArrayList.add(new Audio("Dancing Days", "Led Zeppelin"));
         audioArrayList.add(new Audio("Carpet Crawlers", "Genesis"));
         audioArrayList.add(new Audio("Turn! Turn! Turn!", "The Byrds"));
