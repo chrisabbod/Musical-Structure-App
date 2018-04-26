@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
-    android:background="#D1C4E9">
+    android:background="#EDE7F6"
+    tools:context=".DetailActivity">
 
     <ImageView
-        tools:src="@drawable/ic_launcher_background"
         android:id="@+id/detail_image"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
         android:layout_width="360dp"
-        android:layout_height="360dp" />
+        android:layout_height="360dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:src="@drawable/ic_launcher_background" />
 
     <TextView
         android:id="@+id/detail_title"
@@ -31,45 +31,54 @@
         android:layout_centerHorizontal="true"
         tools:text="ARTIST NAME" />
 
-    <ImageButton
-        android:id="@+id/skip_previous_button"
-        android:layout_width="48dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="63dp"
-        tools:src="@drawable/ic_skip_previous_button" />
+    <!-- ImageButtons -->
 
-    <ImageButton
-        android:id="@+id/pause_button"
-        android:layout_width="48dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/skip_previous_button"
-        tools:src="@drawable/ic_pause_button" />
+        android:layout_margin="8dp"
+        android:gravity="center">
 
-    <ImageButton
-        android:id="@+id/stop_button"
-        android:layout_width="48dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/pause_button"
-        tools:src="@drawable/ic_stop_button" />
+        <ImageButton
+            android:id="@+id/skip_previous_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF176"
+            android:layout_marginRight="16dp"
+            tools:src="@drawable/ic_skip_previous_button" />
 
-    <ImageButton
-        android:id="@+id/play_button"
-        android:layout_width="48dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/stop_button"
-        tools:src="@drawable/ic_play_button" />
+        <ImageButton
+            android:id="@+id/pause_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF176"
+            android:layout_marginRight="16dp"
+            tools:src="@drawable/ic_pause_button" />
 
-    <ImageButton
-        android:id="@+id/skip_next_button"
-        android:layout_width="48dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@id/play_button"
-        android:layout_marginEnd="48dp"
-        tools:src="@drawable/ic_skip_next_button" />
+        <ImageButton
+            android:id="@+id/stop_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF176"
+            android:layout_marginRight="16dp"
+            tools:src="@drawable/ic_stop_button" />
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF176"
+            android:layout_marginRight="16dp"
+            tools:src="@drawable/ic_play_button" />
+
+        <ImageButton
+            android:id="@+id/skip_next_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF176"
+            android:layout_marginRight="16dp"
+            tools:src="@drawable/ic_skip_next_button" />
+    </LinearLayout>
 </RelativeLayout>
