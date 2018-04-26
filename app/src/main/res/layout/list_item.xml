@@ -8,11 +8,8 @@
 
     <TextView
         android:id="@+id/audio_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TitleTextTheme"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:textSize="18sp"
         tools:text="Song Title" />
 
     <TextView
